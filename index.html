@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>My learning</h1>
+        <p>
+          <span class="boid">87hr36min </span>
+          <span class="text-thin">watched </span>
+          <i class="bi bi-exclamation-circle"></i>
+          <span class="boid">View all activity </span>
+        </p>
+        <ul class="nav nav-underline">
+          <li class="nav-item tab">
+            <button
+              class="tablinks nav-link"
+              style="color: white"
+              onclick="openCity(0)"
+            >
+              All courses
+            </button>
+          </li>
+          <li class="nav-item tab">
+            <button
+              class="tablinks nav-link"
+              style="color: white"
+              onclick="openCity(1)"
+            >
+              Learning paths
+            </button>
+          </li>
+          <li class="nav-item tab">
+            <button
+              class="tablinks nav-link"
+              style="color: white"
+              onclick="openCity(2)"
+            >
+              Certifications
+            </button>
+          </li>
+          <li class="nav-item tab">
+            <button
+              class="tablinks nav-link"
+              style="color: white"
+              onclick="openCity(3)"
+            >
+              Archived
+            </button>
+          </li>
+          <li class="nav-item tab">
+            <button
+              class="tablinks nav-link"
+              style="color: white"
+              onclick="openCity(4)"
+            >
+              Learning tools
+            </button>
+          </li>
+        </ul>
+      </header>
+
+      <!-- Tab content -->
+      <div class="tabcontent">
+        <h3>All courses</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+      <!-- Certificate tab content -->
+      <div class="tabcontent">
+        <div class="certificate_heading">
+          <div class="flex_row-between">
+            <h2>My badges</h2>
+            <i class="bi bi-chevron-up"></i>
+          </div>
+          <div class="flex_row-between">
+            <p>
+              You have earned and uploaded <span class="boid">0 badges</span>
+              <i class="bi bi-exclamation-circle"></i>
+            </p>
+            <button type="button">Import new badge</button>
+          </div>
+          <p class="desc_Course">
+            Currently, there are no badges uploaded to your profile. Begin your
+            journey towards your Certifications goals or
+            <span class="em">Upload your third-party</span> badges to your
+            profile and impress your manager and peers with your
+            accomplishments. Start preparing for your next certificate today!
+          </p>
+        </div>
+
+        <div class="certificate_display">
+          <div class="flex_row-between">
+            <h2>Certification preparation</h2>
+            <i class="bi bi-chevron-up"></i>
+          </div>
+          <div class="flex_row-between">
+            <p>
+              You are preparing for <span class="boid">4 certifications</span>
+              <i class="bi bi-exclamation-circle"></i>
+            </p>
+            <button class="explore_btn" type="button">
+              Explore certification preparation
+            </button>
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <div class="certificate_list row">
+            <!-- Certificate Card 1 -->
+            <div class="col-6">
+              <div class="card" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="https://freevector-images.s3.amazonaws.com/uploads/vector/preview/41358/Vector4free-Graduation-Certificate-Revisi1-DP0822_generated.jpg"
+                      class="img-fluid rounded-start"
+                      alt="Certificate Image"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </h5>
+                      <p class="card-text card_boid">
+                        Oracle Certificate Associate, Java SE 8 Programmer
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">Oracle</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate Card 2 -->
+            <div class="col-6">
+              <div class="card" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="https://freevector-images.s3.amazonaws.com/uploads/vector/preview/41358/Vector4free-Graduation-Certificate-Revisi1-DP0822_generated.jpg"
+                      class="img-fluid rounded-start"
+                      alt="Certificate Image"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </h5>
+                      <p class="card-text card_boid">
+                        ISTQB Certified Tester Foundation Level (CTFL)
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">Bright test</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Archive tab content -->
+      <div class="tabcontent">
+        <div class="card" style="width: 20rem">
+          <img
+            src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top"
+            alt="Training Image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              FPT_Corporate Social Responsibility Training 2024
+            </h5>
+            <p class="card-text">FSOFT Content Development</p>
+          </div>
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col">100% complete</div>
+                <div class="col">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i class="bi bi-three-dots-vertical"></i>
+        </div>
+      </div>
+
+      <!-- Learning tool -->
+      <div class="tabcontent">
+        <div class="certificate_display">
+          <div class="flex_row-between">
+            <h2>Learning tools </h2>
+          </div>
+          <div class="flex_row-between">
+            <p class="tab_introduce">
+              Explore a diverse range of courses and take advantage of these
+              versatile tools to <br> gain knowledge, skill, and confidence at your
+              own pace.
+            </p>
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <div class="certificate_list row">
+            <!-- Learning Reminders Card -->
+            <div class="col-6">
+              <div class="card" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <i class="bi bi-alarm-fill"></i>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card_boid">Learning reminders</h5>
+                      <p class="min_text">   <small>
+                       Set time aside to learn and get reminders using your scheduler.
+                        </small></p>
+                         <p>You currently have no ongoing reminders. <br>
+                          <a href="">See more</a></p>
+                        
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reflections Card -->
+            <div class="col-6">
+              <div class="card" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card_boid">Reflections <span class="beta">Beta</span></h5>
+                   <p class="min_text">   <small>
+                    Take time to reflect to strengthen your learning
+                     </small></p>
+                      <p>You have currently no recorded reflections on your learning journey.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <source
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      type=""
+    />
+    <script src="main.js"></script>
+  </body>
+</html>
